@@ -1,0 +1,124 @@
+.Segmentation {
+  background-image: url(../../assets/earth.jpg);
+  width: auto;
+  height: auto;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  color: white;
+  position: relative;
+  font-family: sans-serif;
+  width: 100%; /* Full width */
+  max-width: 1500px; /* Adjust as needed */
+}
+
+.container1::before,
+.container1::after {
+  content: "";
+  background-color: #fab5704c;
+  position: absolute;
+}
+
+.container1::before {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  top: 30%;
+  right: 7%;
+}
+
+.container1::after {
+  height: 3rem;
+  top: 8%;
+  right: 5%;
+  border: 1px solid;
+}
+
+.container1 .box {
+  width: 1500px;
+  height: 620px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.0074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+  display: flex;
+  flex-direction: row; /* Keep left, middle, and right in a row */
+  justify-content: space-between; /* Space between sections */
+  gap: 20px;
+}
+
+.container1 .box:hover {
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.Left, .Right {
+  display: flex;
+  flex-grow: 1; /* Make left and right take equal space */
+  justify-content: center;
+  align-items: center;
+  min-width: 200px; /* Ensure they take up some space even if empty */
+  gap:30px;
+}
+ .Right {
+  display: flex;
+ flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px; /* Ensure they take up some space even if empty */
+  gap:50px;
+}
+
+
+.Middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-width: 300px; /* Ensure the middle section has a reasonable width */
+}
+
+/* Adjust the file upload button */
+.odoo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.custom-file-upload {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.upload{
+  width:300px;
+  
+}
+.imgdef{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+}
